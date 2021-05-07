@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 650px;
+    background-color: #FED100; 
+    padding: 0px 280px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav > div.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 30px;
+}
+nav > div.phone_number {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 30px;
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    padding: 0px 25px;
+}
+
+nav > ul > li > a {
+    font-size: 18px;
+}
+.header_container {
+    display: flex;
+}
+.icons_container {
+    padding: 40px 30px;
+}
+.icons_container > h1 {
+    font-size: 70px;
+    margin: 0;
+    font-weight: bold;
+}
+.icons_container > p {
+    font-size: 22px;
+}
+
+.icons_container > button {
+    display: block;
+    background-color:#FF352B;
+    padding: 15px 95px;
+    border: none;
+    min-width: 290px;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.icons_container > button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    z-index: 0;
+}
+
+.good_qualities {
+    display: flex;
+    padding: 70px 0px;
+}
+
+.good_qualities > span {
+    padding: 0px 10px;
+}
+.good_qualities > span > p {
+    max-width: 95px;
+    margin: 0;
+    font-size: 16px;
+    padding: 0px 0px 0px 60px;
+    line-height: 21px;
+}
+.count_moving {
+    background: url('./materials/truck2.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.count_moving::after {
+    content: url('./materials/truck1.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: 1;
+}
+
+.packing {
+    background:url('./materials/triggerTwo2.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.packing::after {
+    content: url('./materials/triggerTwo1.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: 1;
+}
+
+.price {
+    background: url('./materials/money2.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.price::after {
+    content: url('./materials/money1.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: 1;
+}
+
+.man {
+    position: relative;
+    z-index: 1;
+    max-height: 550px;
+}
+
+.master {
+    position: relative;
+    z-index: 0;
+    top: 90px;
+    left: -120px;
+    max-height: 300px;
+}
+
+
+.how_it_works {
+    height: 100%;
+    max-height: 480px;
+    text-align: center;
+}
+
+.how_it_works > h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.typeography {
+    padding: 0px 0px 10px 70px;
+    max-width: 400px; 
+}
+.steps {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.steps > div:nth-child(2) {
+    margin-left: 100px;
+}
+
+.step1 {
+    display:block;
+    background: url('./materials/01y.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.step1::after {
+    content: url('./materials/01b.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: -1;
+}
+
+.step2 {
+    display:block;
+    background: url('./materials/02y.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.step2::after {
+    content: url('./materials/02b.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: -1;
+}
+.step3 {
+    display:block;
+    background: url('./materials/03y.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.step3::after {
+    content: url('./materials/03b.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: -1;
+}
+.step4 {
+    display:block;
+    background: url('./materials/04y.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.step4::after {
+    content: url('./materials/04b.png');
+    position:absolute;
+    top: 0px;
+    left: -3px;
+    z-index: -1;
+}
+
+.flat_prices {
+    text-align:center;
+    margin-top: 60px;
+}
+
+.flat_variants {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.flat_variants > div {
+    
+    max-width: 420px;
+    text-align: center;
+    border: 2px solid #FED100;
+    padding: 40px 80px;
+    margin: 0px 20px
+}
+.flat_variants > div > button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color:#FED100;
+    border: none;
+    font-size: 20px;
+}
+.flat_variants > div > h2 {
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.autopark_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auto_kinds > button{ 
+    padding: 10px 30px;
+    border: solid 1px #b8b2b8;
+    background-color: white;
+}
+
+.auto_slider {
+    display: flex;
+    justify-content:center;
+}
+
+.auto_slider > button{
+    border: none;
+    background-color: white;
+    font-size: 34px;
+    margin: 0px 30px;
+}
+
+.auto_info {
+    margin: auto 0px;
+}
+
+.auto_info > p{
+    padding: 20px 0px;
+}
+
+.auto_info > p > i {
+    padding-right: 10px;
+}
+
+.auto_info > button {
+    background-color:#FED100; 
+    border: none;   
+    font-size: 20px;
+    padding: 10px 70px;
+}
+
+.reviews {
+    background-color: #FED100;
+    text-align: center;
+    padding: 50px 0px
+}
+.reviews_variants {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+.reviews_variants > div {
+    max-width: 420px;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.contacts {
+    display: flex;
+    margin: 5% 20% 5% 20%;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.contact_headers > h1{
+    font-size: 30px;
+}
+
+.contact_fields {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_fields > input{
+    font-size: 22px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-right: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+}
+
+.contact_fields > button {
+    display: block;
+    background-color:#FF352B;
+    padding: 10px 45px;
+    border: none;
+    min-width: 290px;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact_fields > button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #FED100;
+    z-index: 0;
+}
+
+.consent_check {
+    display: flex; 
+    justify-content: flex-end;
+    margin: 20px 70px;
+}
+
+#aprove {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#aprove+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+#aprove+label::before {
+    content: '';
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #333333;
+    border-radius: 0;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+#aprove:checked+label::before {
+    border-color: #0b76ef;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+footer {
+    background-color:#FED100;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+footer > div {
+    max-width: 200px;
+}
+.docs > h1 {
+    margin: 0px;
+}
+ .footer_navigation {
+     display: flex;
+     flex-direction: column;
+ }
+ .footer_navigation > a {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 500;
+ }
+ .icons {
+    display: flex;
+    flex-direction: column;
+ }
+ .icons > div > i{
+    padding-right: 20px;
+ }
+ .email {
+     font-size: 20px;
+ }
+
+ .fast_contacts {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .fast_contacts > button{
+     background-color:#FED100;
+     font-size: 20px;
+     padding:10px 16px;
+     border: solid 1px black;
+ }
+
+ .fast_contacts > a {
+     padding: 10px 0px;
+     text-align: center;
+ }
